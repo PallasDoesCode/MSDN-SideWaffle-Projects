@@ -67,14 +67,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ItemTemplates\SampleCategory\Bootstrap3BasicTemplate\Definitions\CSharp.vstemplate">
+    <Content Include="ItemTemplates\Web\Bootstrap 3 Basic Template\Definitions\CSharp.vstemplate">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="ItemTemplates\SampleCategory\Bootstrap3BasicTemplate\Definitions\VB.vstemplate" />
-    <Content Include="ItemTemplates\SampleCategory\Bootstrap3BasicTemplate\Definitions\Web.csharp.vstemplate" />
-    <Content Include="ItemTemplates\SampleCategory\Bootstrap3BasicTemplate\Definitions\Web.VB.vstemplate" />
-    <EmbeddedResource Include="ItemTemplates\SampleCategory\Bootstrap3BasicTemplate\View\HTMLPage1.html" />
-    <EmbeddedResource Include="ItemTemplates\SampleCategory\Bootstrap3BasicTemplate\View\HTMLPage2.html" />
+    <Content Include="ItemTemplates\Web\Bootstrap 3 Basic Template\Definitions\VB.vstemplate" />
+    <Content Include="ItemTemplates\Web\Bootstrap 3 Basic Template\Definitions\Web.csharp.vstemplate" />
+    <Content Include="ItemTemplates\Web\Bootstrap 3 Basic Template\Definitions\Web.VB.vstemplate" />
+    <EmbeddedResource Include="ItemTemplates\Web\Bootstrap 3 Basic Template\View\HTMLPage1.html" />
+    <EmbeddedResource Include="ItemTemplates\Web\Bootstrap 3 Basic Template\View\HTMLPage2.html" />
     <None Include="packages.config" />
     <None Include="Properties\template-builder.props" />
     <None Include="source.extension.vsixmanifest">
@@ -99,7 +99,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ItemTemplates\SampleCategory\Bootstrap3BasicTemplate\icon.png" />
+    <Content Include="ItemTemplates\Web\Bootstrap 3 Basic Template\icon.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="TemplateBuilder">
