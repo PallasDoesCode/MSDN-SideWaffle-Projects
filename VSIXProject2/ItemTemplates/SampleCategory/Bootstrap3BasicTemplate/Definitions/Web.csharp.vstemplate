@@ -1,0 +1,19 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
+  <TemplateData>
+    <ProjectType>Web</ProjectType>
+    <ProjectSubType>CSharp</ProjectSubType>
+
+    <DefaultName>Bootstrap 3 Basic Template.txt</DefaultName>
+    <Name>Bootstrap 3 Basic Template</Name>
+    <Description>A basic HTML5 template using Bootstrap 3</Description>
+    <Icon>icon.png</Icon>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+  </TemplateData>
+  <TemplateContent>
+    <References />
+
+    <ProjectItem TargetFileName="View/HTMLPage1.html" ReplaceParameters="true">View/HTMLPage1.html</ProjectItem>
+    <ProjectItem TargetFileName="View/HTMLPage2.html" ReplaceParameters="true">View/HTMLPage2.html</ProjectItem>
+    
+  </TemplateContent>
+</VSTemplate>
