@@ -60,6 +60,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup Label="TemplateBuilder">
+    <TemplateBuilderTargets Condition=" '$(TemplateBuilderTargets)'=='' ">$([System.IO.Path]::GetFullPath( $(MSBuildProjectDirectory)\..\packages\TemplateBuilder.1.1.2-beta5\tools\ligershark.templates.targets ))</TemplateBuilderTargets>
+  </PropertyGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -70,8 +73,10 @@
     <Content Include="ItemTemplates\SampleCategory\Bootstrap3BasicTemplate\Definitions\VB.vstemplate" />
     <Content Include="ItemTemplates\SampleCategory\Bootstrap3BasicTemplate\Definitions\Web.csharp.vstemplate" />
     <Content Include="ItemTemplates\SampleCategory\Bootstrap3BasicTemplate\Definitions\Web.VB.vstemplate" />
-    <Content Include="ItemTemplates\SampleCategory\Bootstrap3BasicTemplate\View\HTMLPage1.html" />
-    <Content Include="ItemTemplates\SampleCategory\Bootstrap3BasicTemplate\View\HTMLPage2.html" />
+    <EmbeddedResource Include="ItemTemplates\SampleCategory\Bootstrap3BasicTemplate\View\HTMLPage1.html" />
+    <EmbeddedResource Include="ItemTemplates\SampleCategory\Bootstrap3BasicTemplate\View\HTMLPage2.html" />
+    <None Include="packages.config" />
+    <None Include="Properties\template-builder.props" />
     <None Include="source.extension.vsixmanifest">
       <SubType>Designer</SubType>
     </None>
@@ -93,12 +98,17 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Content Include="ItemTemplates\SampleCategory\Bootstrap3BasicTemplate\icon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Reference Include="TemplateBuilder">
+      <HintPath>..\packages\TemplateBuilder.1.1.2-beta5\lib\TemplateBuilder.dll</HintPath>
+    </Reference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(TemplateBuilderTargets)" Condition="Exists('$(TemplateBuilderTargets)')" Label="TemplateBuilder" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
