@@ -23,6 +23,8 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <StartProgram Condition=" '$(StartProgram)'=='' ">$(DevEnvDir)\devenv.exe</StartProgram>
+    <StartArguments Condition=" '$(StartArguments)'=='' ">/rootsuffix Exp</StartArguments>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -102,7 +104,8 @@
     <Content Include="ItemTemplates\Web\Bootstrap 3 Basic Template\icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="TemplateBuilder">
+    <Reference Include="TemplateBuilder, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\TemplateBuilder.1.1.2-beta5\lib\TemplateBuilder.dll</HintPath>
     </Reference>
   </ItemGroup>
