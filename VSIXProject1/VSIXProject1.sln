@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VSIXProject1", "VSIXProject1\VSIXProject1.csproj", "{097A6059-BFB3-4B13-984C-60E7B50B479E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContosoWebFormsMvc", "ContosoWebFormsMvc\ContosoWebFormsMvc.csproj", "{74FC7A54-E745-4EDE-A12F-09F877AA06CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{097A6059-BFB3-4B13-984C-60E7B50B479E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{097A6059-BFB3-4B13-984C-60E7B50B479E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{097A6059-BFB3-4B13-984C-60E7B50B479E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{097A6059-BFB3-4B13-984C-60E7B50B479E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74FC7A54-E745-4EDE-A12F-09F877AA06CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74FC7A54-E745-4EDE-A12F-09F877AA06CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
