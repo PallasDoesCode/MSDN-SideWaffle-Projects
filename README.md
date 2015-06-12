@@ -1,5 +1,7 @@
 # MSDN-SideWaffle-Projects
 
+[![Build status](https://ci.appveyor.com/api/projects/status/hbq3ono7e026o45g/branch/master?svg=true)](https://ci.appveyor.com/project/RandomlyKnighted/msdn-sidewaffle-projects/branch/master)
+
 Thanks for reading Create Your Own Visual Studio Templates with SideWaffle, written by [Tyler Hughes](https://twitter.com/thughesIT) and [Sayed Ibrahim Hashimi](https://twitter.com/sayedihashimi). In this repository you will find the final code for the three projects we created in the article. For the Project Templates solution, you will need to use the [Contoso Sample Templates](bit.ly/ContosoTemplates). If you have any questions about the projects feel free to post them in the [issues section](https://github.com/RandomlyKnighted/MSDN-SideWaffle-Projects/issues).
 
 
